@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voto y demografía</title>
+  <style>
+    :root { --plane: #f9f9f7; --ink: #0b0b0b; --ink-2: #52514e; --border: rgba(11,11,11,.10); }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) { --plane: #0d0d0d; --ink: #fff; --ink-2: #c3c2b7; --border: rgba(255,255,255,.10); }
+    }
+    :root[data-theme="dark"] { --plane: #0d0d0d; --ink: #fff; --ink-2: #c3c2b7; --border: rgba(255,255,255,.10); }
+    body { margin: 0; background: var(--plane); color: var(--ink); font-family: system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .host-bar { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 16px;
+      border-bottom: 1px solid var(--border); font-size: 13px; color: var(--ink-2); flex-wrap: wrap; }
+    .host-bar code { font-size: 12px; }
+    .evento { font-size: 12px; color: var(--ink-2); padding: 8px 16px; border-top: 1px solid var(--border); overflow-wrap: anywhere; }
+    .host-bar code, .evento code { overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <!-- Esta barra simula la aplicación anfitriona. El módulo es solo la etiqueta de abajo. -->
+  <div class="host-bar">
+    <span>Aplicación anfitriona (demo) · módulo incrustado: <code>&lt;voto-correlaciones src="data/agregados.json"&gt;</code></span>
+  </div>
+
+  <voto-correlaciones src="data/agregados.json"></voto-correlaciones>
+
+  <div class="evento" id="evento">Evento <code>vc-change</code>: (cambia un filtro para verlo; la anfitriona puede usarlo para sincronizar su mapa por DIVIPOLA)</div>
+
+  <script src="voto-correlaciones.js"></script>
+  <script>
+    document.addEventListener('vc-change', e => {
+      document.getElementById('evento').innerHTML = 'Evento <code>vc-change</code>: <code>' + JSON.stringify(e.detail) + '</code>';
+    });
+  </script>
+</body>
+</html>

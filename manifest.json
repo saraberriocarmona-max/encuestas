@@ -1,0 +1,58 @@
+{
+  "nombre": "voto-correlaciones",
+  "version": "0.1.0",
+  "construido": "2026-09-27T17:28:44",
+  "datos_generados": "2026-09-27T17:28:41",
+  "fuente": "Registro Nacional de Encuestas CNE 2026 (Ley 2494 de 2025, art. 12)",
+  "encuestas": 33,
+  "firmas": [
+    "AtlasIntel",
+    "Centro Nacional de Consultoría",
+    "Cifras y Conceptos",
+    "Corporación Miguel Maldonado",
+    "Cámara de Comercio de Valledupar",
+    "GAD3",
+    "Guarumo / EcoAnalítica",
+    "Invamer",
+    "Tempo Consultoría"
+  ],
+  "n_min_supresion": 30,
+  "archivos": {
+    "data/agregados.json": {
+      "bytes": 4106775,
+      "sha256": "e7ba50662787b7da84fcff0717d300e0d8a52f9a9673bd1a4bb87a3046653c0c"
+    },
+    "ejemplos/basico.html": {
+      "bytes": 518,
+      "sha256": "86fc814edbc93dab44e3a2935b2617954edce7a40fa57f9c317948c650b8ac8d"
+    },
+    "ejemplos/mapa-divipola.html": {
+      "bytes": 4689,
+      "sha256": "87549edde7b898b68a3e8df4a5da7324274cedecb0e186a08456ac00670115ba"
+    },
+    "esquema_armonizado.md": {
+      "bytes": 4838,
+      "sha256": "e560fef8911358ccd0bedc2b21d495b6cfde6534c0b98793bb54a9712af5726f"
+    },
+    "index.html": {
+      "bytes": 1962,
+      "sha256": "f6875766c2fe17ef6de671790efc47be934390c77713525349fabd536c71d699"
+    },
+    "INTEGRACION.md": {
+      "bytes": 6829,
+      "sha256": "e0489e2431b1cf2d83b2c091d783e53441c8db8b4a6d229b3706af1bb14aa71e"
+    },
+    "integracion_app_anfitriona.md": {
+      "bytes": 2487,
+      "sha256": "cc51bb7a5c479b67f81523866ead2e1f920675db4cf8200831baf20ddb68de3b"
+    },
+    "servidor.ps1": {
+      "bytes": 1937,
+      "sha256": "41c21b2b75077c28e5b11fc05b2c187daa488f017633ae884f69bed706cb1f82"
+    },
+    "voto-correlaciones.js": {
+      "bytes": 39715,
+      "sha256": "70dd342c5331f711bde24b1b366d0af62b2357fbb065820f89ffebc09caddb5b"
+    }
+  }
+}
